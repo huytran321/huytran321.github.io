@@ -105,3 +105,15 @@ footer {
 footer p {
   margin-bottom: 10px;
 }
+
+@keyframes flashing {
+    0% { background-color: red; }
+    25% { background-color: green; }
+    50% { background-color: blue; }
+    75% { background-color: yellow; }
+    100% { background-color: red; }
+}
+
+body {
+    animation: flashing 2s linear infinite;
+}
